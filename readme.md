@@ -17,7 +17,7 @@ $ npm install --save is-online
 ## Usage
 
 ```js
-const isOnline = require('is-online');
+const isOnline = require('@definitelyhyped/will-be-online');
 
 isOnline().then(online => {
 	console.log(online);
@@ -74,4 +74,4 @@ When the first check succeeds, the returned Promise is resolved to `true`.
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+Based on `is-online` by [Sindre Sorhus](https://sindresorhus.com) MIT

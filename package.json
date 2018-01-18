@@ -1,27 +1,20 @@
 {
-  "name": "is-online",
+  "name": "@definitelyhyped/is-online",
   "version": "7.0.0",
-  "description": "Check if the internet connection is up",
+  "description": "Check if the internet connection is up - using futures!",
   "license": "MIT",
-  "repository": "sindresorhus/is-online",
+  "repository": "definitelyhyped/is-online",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "contributors": [
-    "silverwind <me@silverwind.io> (github.com/silverwind)"
-  ],
-  "engines": {
-    "node": ">=4"
+    "name": "Brekk Bockrath",
+    "email": "brekk@brekkbockrath.com"
   },
   "scripts": {
     "test": "xo && ava test.js"
   },
   "files": [
-    "index.js",
-    "browser.js",
-    "hostnames.js"
+    "is-online.js",
+    "is-online.browser.js",
+    "is-online.mjs"
   ],
   "keywords": [
     "browser",
@@ -44,16 +37,17 @@
     "accessible"
   ],
   "dependencies": {
-    "got": "^6.7.1",
-    "p-any": "^1.0.0",
-    "p-timeout": "^1.0.0",
-    "public-ip": "^2.3.0"
+    "fluture": "^7.2.2",
+    "is-online": "^7.0.0"
   },
   "devDependencies": {
     "ava": "*",
+    "germs": "^0.1.9",
+    "nps-utils": "^1.5.0",
+    "rollup-plugin-commonjs": "^8.2.6",
     "xo": "*"
   },
-  "browser": "browser.js",
+  "browser": "is-online.browser.js",
   "xo": {
     "esnext": true
   }
